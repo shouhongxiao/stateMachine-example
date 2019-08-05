@@ -16,7 +16,8 @@ public class Config5 {
 
     public static StateMachine<OrderState, OrderEvent> buildMachine
             (BeanFactory beanFactory) throws Exception {
-        StateMachineBuilder.Builder<OrderState, OrderEvent> builder = StateMachineBuilder.builder();
+        StateMachineBuilder.Builder<OrderState, OrderEvent> builder =
+                StateMachineBuilder.builder();
 
         builder.configureConfiguration()
                 .withConfiguration()

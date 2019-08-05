@@ -36,6 +36,7 @@ public class Config5EventTest {
         stateMachine.start();
         stateMachine.sendEvent(OrderEvent.E1);
 
+
     }
 
 }

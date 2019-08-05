@@ -27,6 +27,7 @@ public class Config5StateMachine {
 
     @OnTransition
     public void transtion(StateContext<OrderState, OrderEvent> stateContext) {
+
         if (stateContext.getEvent() != null)
             logger.info(stateContext.getEvent().name());
     }
