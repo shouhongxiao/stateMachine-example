@@ -20,12 +20,8 @@ public class LaterService {
 
     @Bean
     public Guard<WorkOrderState, WorkOrderEvent> laterGuard() {
-        return stateContext -> {
-
-        return true;
-    };
-
-}
+        return stateContext -> true;
+    }
 
 
     @Bean
